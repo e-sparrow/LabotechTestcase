@@ -1,4 +1,3 @@
-using System.Diagnostics;
 using PokerResolver;
 
 namespace PokerResolverTests
@@ -9,9 +8,9 @@ namespace PokerResolverTests
         private static readonly IDictionary<IReadOnlyList<int>, int> EstimatedResults =
             new Dictionary<IReadOnlyList<int>, int>()
             {
-                { new int[] { 1, 5, 9, 10, 5 }, 12},
-                { new int[] { 1, 2, 3 }, 1},
-                { new int[] { 0, 1, 1, 1, 1, 1, 1, 1, 1, 2 }, 1},
+                { new [] { 1, 5, 9, 10, 5 }, 12 },
+                { new [] { 1, 2, 3 }, 1 },
+                { new [] { 0, 1, 1, 1, 1, 1, 1, 1, 1, 2 }, 1 },
             };
 
         [Test]
